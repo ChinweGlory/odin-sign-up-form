@@ -8,67 +8,113 @@
   </head>
   <body>
     <div class="container">
-        <figure>
+      <figure>
         <img src="assest/images/halie-west-25xggax4bSA-unsplash.jpg" alt="" />
-       <div class="sign-up"> <img src="assest/images/sign-up-icon-9.png" alt=""></div>
-        <figcaption> Photo by <a href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
-        </figure>
-        
+        <div class="sign-up">
+          <img src="assest/images/sign-up-icon-9.png" alt="" />
+        </div>
+        <figcaption>
+          Photo by
+          <a
+            href="https://unsplash.com/@haliewestphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Halie West</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </figcaption>
+      </figure>
+
       <div class="form-side">
         <div class="step-one">
           <h3>
-            This is not a real online service! You know you need something<br> like
-            this in your life to help you realize your deepest dreams.
-          <br>
-          Sign up now to get started.</h3>
+            This is not a real online service! You know you need something<br />
+            like this in your life to help you realize your deepest dreams.
+            <br />
+            Sign up now to get started.
+          </h3>
           <p>You know you want to</p>
         </div>
         <form action="#" method="post">
-          <P>Let's do this!</P>
+          <p>Let's do this!</p>
           <div class="form-detail">
-             <div class="form-info">
+            <div class="form-info">
               <div class="first-name">
-              <div><label for="first-name">FIRST NAME</label></div>
-              <input type="text" name="first-name" id="first-name" placeholder="Thor" required />
+                <div><label for="first-name">FIRST NAME</label></div>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  placeholder="Thor"
+                  required
+                />
+              </div>
+              <div class="last-name">
+                <div><label for="last-name">LAST NAME</label></div>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  required
+                  placeholder="Odinson/"
+                />
+              </div>
             </div>
-            <div class="last-name">
-              <div><label for="last-name">LAST NAME</label></div>
-              <input type="text" name="last-name" id="last-name" required placeholder="Odinson/">
-            </div>
-            </div>  
-             <div class="form-info"> 
+            <div class="form-info">
               <div class="form-email">
                 <div><label for="email">EMAIL</label></div>
                 <input type="email" name="email" id="email" required />
               </div>
               <div class="form-number">
                 <div><label for="phone-number">PHONE NUMBER</label></div>
-                <input type="tel" name="phone-number" id="phone-number" required>
+                <input
+                  type="tel"
+                  name="phone-number"
+                  id="phone-number"
+                  required
+                />
               </div>
-            </div> 
+            </div>
             <div class="form-info">
               <div class="password">
                 <div><label for="password">PASSWORD</label></div>
-                <input type="password" name="password" id="password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                />
+                <input
+                  type="radio"
+                  id="show-password"
+                  onclick="togglePasswordVisibility()"
+                />
+                <label for="show-password">Show Password</label>
                 <span>password do not match</span>
               </div>
               <div class="confirm-password">
-                <div><label for="confirm-password">CONFIRM PASSWORD</label></div>
-                <input type="password" name="confirm-password" id="confirm-password" required>
+                <div>
+                  <label for="confirm-password">CONFIRM PASSWORD</label>
+                </div>
+                <input
+                  type="password"
+                  name="confirm-password"
+                  id="confirm-password"
+                  required
+                />
               </div>
             </div>
-          
-
           </div>
           <div class="btn">
             <button type="submit">Create Account</button>
             <p>Already have an Account? <a href="#">Log in</a></p>
           </div>
-          
         </form>
-      </div> 
-        </div>
-      
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
