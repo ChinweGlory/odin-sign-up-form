@@ -20,7 +20,7 @@ figure {
 
 figcaption {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 0;
   right: 0;
   padding: 10px;
@@ -28,13 +28,13 @@ figcaption {
 }
 
 img {
-  width: 45vw;
+  width: 43vw;
 }
 
 .sign-up > img {
   position: absolute;
   top: 30%;
-  left: 45%;
+  left: 43%;
   transform: translate(-50%, -50%);
   background-color: transparent;
   padding: 10px;
@@ -150,17 +150,28 @@ button {
   font-size: 12px;
 }
 
-/* Styles for large screens */
-@media (min-width: 1200px) {
-  /* Your styles for large screens go here */
-}
-
 /* Styles for medium screens */
 @media (min-width: 768px) and (max-width: 1199px) {
   /* Your styles for medium screens go here */
+  .container {
+    display: flex;
+    padding-left: 10px;
+  }
+  figure > img {
+    width: 45vw;
+  }
+  
 }
 
 /* Styles for small screens (tablets and mobile devices) */
 @media (max-width: 767px) {
   /* Your styles for small screens go here */
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  figure > img {
+    width: fit-content;
+    height: 40vh;
+  }
 }
