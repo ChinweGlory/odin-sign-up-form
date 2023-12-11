@@ -31,18 +31,30 @@ img {
   width: 45vw;
 }
 
-.sign-up {
+.sign-up > img {
   position: absolute;
   top: 30%;
-  left: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 100px;
+}
+
+.sign-up > p {
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 65%;
   transform: translate(-50%, -50%);
   background-color: transparent;
   padding: 10px;
   border-radius: 5px;
   text-align: center;
 }
-
-
 
 .step-one {
   background-color: rgba(89, 109, 72, 0.066);
@@ -59,7 +71,7 @@ img {
 }
 
 form {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .form-detail {
@@ -69,84 +81,86 @@ form {
   padding-bottom: 20px;
   border-bottom: 5px rgba(128, 128, 128, 0.252) solid;
   box-shadow: inset;
-
 }
 
 .form-info {
   display: flex;
   gap: 40px;
-  
+
   margin: 10px;
 }
 
 input {
-  /* width: 200px;
-  height: 25px; */
   border: 1px gray solid;
-  padding: 5px;
+  padding: 7px;
 }
 
 form > p {
-    
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
 input:valid {
   border-color: rgba(0, 128, 0, 0.502);
-} 
+}
 
 input:invalid {
-    border-color: red;
-  } 
+  border-color: red;
+}
 
 label {
   font-size: 12px;
 }
 
 .password {
-    display: grid;
+  position: relative;
+}
+
+.password i {
+  position: absolute;
+  top: 78%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding-bottom: 15px;
 }
 
 .password > span {
-    font-size: 10px;
-    display: none;
-    color: red;
+  font-size: 10px;
+  display: none;
+  color: red;
 }
 
 .btn {
-    background-color: rgba(89, 109, 72, 0.066);
-    padding-bottom: 50px;
-    
+  background-color: rgba(89, 109, 72, 0.066);
+  padding-bottom: 50px;
 }
 
 button {
-    margin-top: 20px;
-    width: 150px;
-    height: 35px;
-    border-radius: 5px;
-    border: none;
-    background-color: #596D48 ;
-    color: white;
-    
+  margin-top: 20px;
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  background-color: #596d48;
+  color: white;
 }
 
 .btn > p {
-    padding-top: 20px;
-    font-size: 12px;
+  padding-top: 20px;
+  font-size: 12px;
 }
 
 /* Styles for large screens */
 @media (min-width: 1200px) {
-    /* Your styles for large screens go here */
-  }
-  
-  /* Styles for medium screens */
-  @media (min-width: 768px) and (max-width: 1199px) {
-    /* Your styles for medium screens go here */
-  }
-  
-  /* Styles for small screens (tablets and mobile devices) */
-  @media (max-width: 767px) {
-    /* Your styles for small screens go here */
-  }
-  
+  /* Your styles for large screens go here */
+}
+
+/* Styles for medium screens */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* Your styles for medium screens go here */
+}
+
+/* Styles for small screens (tablets and mobile devices) */
+@media (max-width: 767px) {
+  /* Your styles for small screens go here */
+}
